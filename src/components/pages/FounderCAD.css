@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.founder-section2 {
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #f7f7fb, #e2e4f0);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* 🔶 Flex Layout */
+.founder-layout2 {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+.founder-mage1 {
+  flex: 0 0 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.founder-mage1 img {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 📝 Text Content */
+.founder-text2 {
+  flex: 1;
+  max-width: 760px;
+}
+
+.founder-text2 h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.tagline2 {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #fa192c;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.founder-text2 p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.founder-text2 strong {
+  font-weight: 600;
+  color: #222;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .founder-layout2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .founder-image2 img {
+    margin-bottom: 2rem;
+  }
+
+  .founder-text2 {
+    margin-top: 1rem;
+  }
+}
