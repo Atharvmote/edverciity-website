@@ -1,0 +1,52 @@
+.students-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #1E3A8A, #E53935);
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+/* Coming Soon Container */
+.coming-soon-container {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Main Coming Soon Text */
+.coming-soon {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: glowBounce 2s infinite;
+  letter-spacing: 2px;
+}
+
+/* Subtext */
+.coming-soon-container p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  margin-top: 10px;
+  animation: fadeIn 2s ease forwards;
+  letter-spacing: 1px;
+}
+
+/* Glow + Bounce Animation */
+@keyframes glowBounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-15px) scale(1.05); }
+  60% { transform: translateY(-8px) scale(1); }
+}
+
+/* Fade in Up animation for container */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Fade in subtext */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

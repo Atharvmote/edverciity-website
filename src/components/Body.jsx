@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Body.css';
-import main from '../assets/Body/automative-embedded.jpg';
+import main from '../assets/Body/1.jpg';
 import TopY from '../assets/Body/TopY.jpg';
 //Tree images of top slider
  import about9 from '../assets/Body/about-logo.png';
@@ -111,7 +111,7 @@ const Body = () => {
     {
       title: "Data Science",
       image: TopX,
-      description: "Master data wrangling, machine learning, and predictive analytics.",
+      description: "Unlock career opportunities by mastering Python, Machine Learning, AI, and Big Data in one comprehensive program.",
       rating: "4.7",
       applied: "4379+ ",
       link: "/datascience"
@@ -119,7 +119,7 @@ const Body = () => {
     {
       title: "Full Stack MERN",
       image: TopX,
-      description: "Build scalable web using MongoDB, Express, React, and Node.js.",
+      description: "Build dynamic, scalable, and modern web applications with the power of MERN.",
       rating: "4.8",
       applied: "7433+ ",
       link: "/fullstack"
@@ -127,7 +127,7 @@ const Body = () => {
     {
       title: "Artificial Intelligence",
       image: TopX,
-      description: "Learn neural networks, deep learning, and generative AI.",
+      description: "From neural networks to generative AI — become an AI expert with our comprehensive program.",
       rating: "4.9",
       applied: "5932+ ",
       link: "/ai"
@@ -135,7 +135,7 @@ const Body = () => {
     {
       title: "Software Development",
       image: TopX,
-      description: "From OOP to system design, become a backend beast or frontend wizard.",
+      description: "Master the craft of building innovative, reliable, and scalable software solutions.",
       rating: "4.6",
       applied: "6983+ ",
       link: "/softwaredev"
@@ -340,7 +340,7 @@ const Body = () => {
             <h3>CAD Training</h3> 
             <img src={TopX} alt="CAD Training" className="course-image" /> 
             <p>Gain industry-ready skills in mechanical, civil design through specialized AutoCAD and SolidWorks.</p> 
-            <Link to="./cad"> 
+            <Link to="/cad"> 
               <button className="explore-btn">Explore Courses</button> 
             </Link>
           </div> 
@@ -348,7 +348,7 @@ const Body = () => {
             <h3>IT Training</h3>
             <img src={TopX} alt="IT Training" className="course-image" /> 
             <p>Master the latest development, AI, and core programming with hands-on learning paths.</p> 
-            <Link to="./it"> 
+            <Link to="/it"> 
               <button className="explore-btn">Explore Courses</button> 
             </Link> 
           </div> 

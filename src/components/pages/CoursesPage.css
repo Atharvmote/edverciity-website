@@ -1,0 +1,108 @@
+.courses-page {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Zig-zag layout for categories */
+.category-section {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.category-section.row {
+  flex-direction: row;
+}
+
+.category-section.row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Courses column */
+.courses-column {
+  flex: 1;
+}
+
+/* Category title */
+.courses-column h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #1E3A8A;
+  position: relative;
+}
+
+.courses-column h2::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, #1900ff, #ee0979);
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+/* Course list */
+.courses-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.courses-column ul li {
+  margin-bottom: 10px;
+}
+
+.courses-column ul li a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #000; /* Black text */
+  text-decoration: none; /* No underline */
+
+}
+
+/* Hover effect for course links */
+.courses-column ul li a:hover {
+  background: linear-gradient(90deg, #1900ff, #ee0979);
+  color: #fff;
+  width: 400px;
+  /* transform: translateX(4px); */
+}
+
+/* Category image */
+.category-image {
+  flex: 1;
+  text-align: center;
+}
+
+.category-image img {
+  width: 85%;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .category-section {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .category-image img {
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .courses-column h2 {
+    text-align: center;
+  }
+
+  .courses-column ul li a {
+    text-align: center;
+  }
+}

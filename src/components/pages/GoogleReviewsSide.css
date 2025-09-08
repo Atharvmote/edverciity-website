@@ -1,0 +1,265 @@
+/* === Toggle Button === */
+.gr-toggle {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  width: 65px;
+  height: 230px;
+  background: #fff;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.gr-toggle:hover {
+  background: rgb(245, 244, 241);
+}
+.gr-toggle.hidden {
+  display: none;
+}
+.gr-toggle:hover::after {
+  content: "➜";   /* arrow symbol */
+  position: absolute;
+  left: 19px;
+  top: 83%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.715);
+}
+.gr-toggle-img {
+  width: 90px;
+  margin-bottom: 20px;
+  transform: rotate(90deg);
+}
+
+.gr-toggle-text {
+  font-size: 20px;
+  color: #4f5256;
+  writing-mode: vertical-rl;
+  transform: rotate(360deg);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* === Sidebar === */
+.gr-sidebar {
+  position: fixed;
+  top: 0;
+  left: -40%;
+  width: 37%;
+  height: 100vh;
+  background: white;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  padding: 20px;
+}
+.gr-sidebar.open {
+  left: 0;
+}
+
+/* === Header === */
+.gr-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e8f0fe;
+}
+.gr-header-left {
+  display: flex;
+  align-items: center;
+  gap: -0.2px;
+}
+
+.gr-logo {
+  margin-top:2px;
+  width: 120px;
+}
+.gr-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4f5256;
+}
+.gr-close {
+background: white;
+margin-left:50%;
+border-radius: 20%;
+  border: none;
+  font-size: 29px;
+  color: #26282b;
+}
+.gr-close:hover{
+background: #1a73e800;
+border-radius: 30%;
+}
+
+/* === Main Summary (graph + avg rating) === */
+.gr-main-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 20px 0;
+}
+.gr-distribution {
+  flex: 2;
+}
+.gr-dist-row {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+}
+.gr-dist-row span {
+  font-size: 14px;
+  color: #5f6368;
+}
+.gr-dist-bar {
+  flex: 1;
+  height: 8px;
+  background: #f1f3f4;
+  margin: 0 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.gr-dist-bar .fill {
+  height: 100%;
+  background: #fbbc04;
+}
+.gr-summary {
+  flex: 1;
+  text-align: center;
+}
+.gr-avg {
+  font-size: 48px;
+  font-weight: bold;
+  color: #202124;
+}
+.gr-stars {
+  margin: 8px 0;
+}
+.star {
+  color: #dadce0;
+  font-size: 20px;
+}
+.star.full {
+  color: #fbbc04;
+}
+.star.half {
+  position: relative;
+  color: #dadce0;
+}
+.star.half::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  color: #fbbc04;
+}
+.gr-count {
+  font-size: 14px;
+  color: #5f6368;
+}
+
+.gr-filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: #4f5256;
+  margin: 15px 0;
+  flex-wrap: nowrap;
+}
+.gr-chip-row {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  overflow-x: auto;
+  color: #202124;
+  padding-bottom: 6px;
+}
+.gr-chip-row::-webkit-scrollbar { height: 6px; }
+.gr-chip-row::-webkit-scrollbar-thumb {
+  background: #dadce0;
+  border-radius: 3px;
+}
+.gr-chip {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 16px;
+  background: #f1f3f4;
+  border: none;
+  color: #202124dc;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.gr-chip:hover{
+  background:#91b8eb3a;
+}
+.gr-chip.active {
+  background: #e8f0fe;
+  color: #1a73e8c3;
+}
+.gr-sort-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.gr-sort-label {
+margin-bottom: 10px;
+  font-size: 14px;
+  color: #5f6368;
+}
+.gr-sort-dropdown {
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  font-size: 12.4px;
+}
+
+/* === Review List === */
+.gr-list {
+  max-height: calc(100vh - 350px);
+  overflow-y: auto;
+}
+.gr-item {
+  padding: 15px 0;
+}
+.gr-item-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.gr-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f1f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #5f63685c;
+  margin-right: 10px;
+}
+.gr-user {
+  font-weight: 500;
+}
+.gr-date {
+  font-size: 13px;
+  color: #5f6368;
+}
+.gr-item p {
+  color: #202124;
+  margin: 6px 0;
+}
+.gr-impressions {
+  font-size: 13px;
+  color: #5f6368;
+}

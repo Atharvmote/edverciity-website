@@ -1,0 +1,369 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+} */
+/* header section  */
+/* .nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+} */
+.nav img{
+    width: 12em;
+    height: 3em;
+}
+/* body  */
+.Container{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline: 5em;
+}
+.Container .img1{
+   min-width: 50%;
+   min-height: 96%;
+   padding: 2em;
+   margin-top: 2em;
+   background:linear-gradient(to left, rgb(242, 242, 253),rgb(243, 244, 247));
+   text-align: center;
+}
+.Container .img1 img{
+    width: 90%;
+}
+.Container .info{
+    min-width: 50%;
+    padding: 2em;
+}
+.Container .info p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding-top: 1.3em;
+    text-align: justify;
+}
+   
+.Course-Objective{
+    width: 100%;
+    min-height: 10vh;
+    padding-inline: 5em;
+    padding-top: 3em;
+    margin-top: 1.2em;
+}
+.Course-Objective p{
+    font-size: 1.2em;
+    padding-top: 1.2em;
+    line-height: 1.2em;
+    text-align: justify;
+}
+
+.Wrapper{
+    width: 85%;
+    min-height: 25vh;
+    text-align: center;
+    background:linear-gradient(to right, rgb(250, 137, 150),rgb(250, 187, 187),rgb(239, 228, 228));
+    margin: 7em auto;
+    display: flex;
+    align-items: center;
+}
+.Wrapper .program-duration{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.2em;
+    text-align: left;
+    border-right:4px solid rgb(232, 223, 223) ;
+    margin:  0 10px;
+}
+.Wrapper .program-duration img:hover{
+  transform: rotate(360deg);
+  transition: 1.5s;
+}
+.Wrapper .program-duration p{
+    font-size: 1.1em;
+    padding-right: 10px;
+}
+.Wrapper .program-duration b{
+    font-size: 1.1em;
+    font-weight: 900;
+   
+}
+
+.keytopic{
+    width: 85%;
+    min-height: 30vh;
+    margin: 30px auto;
+    
+}
+
+.keytopic .topics{
+    min-height: 30vh;
+    background-color: rgba(237, 237, 248, 0.938);
+    margin-block: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3em;
+    gap: 10em;
+}
+
+
+.checklist{
+    display: flex;
+    line-height: 2.7em; 
+}
+.checklist img{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.checklist p{
+    font-size: 1.2em;
+    line-height: 2.5em;
+    
+}
+.topics h2{
+    margin-bottom: 1.2rem;
+}
+/* AI pges css */
+.checklist1{
+    display: flex;
+    line-height: 2.3em;
+}
+.checklist1 img{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+.checklist1 p{
+    font-size: 1.2em;
+}
+.topics-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 20px;
+    background-color: rgba(237, 237, 248, 0.938);
+    padding: 3em;
+    margin-block: 30px;
+    border-radius: 20px;
+}
+
+.scope-container{
+    width: 85%;
+    min-height: 40vh;
+    border: 1px solid rgb(211, 208, 208);
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 40px;
+}
+.scope{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    gap: 20px;
+    
+}
+.scope .aboutsec{
+   width: 40%;
+   min-height: 20vh;
+}
+.scope .aboutsec p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-block: 20px;
+    text-align: justify;
+}
+.scope .scopeImg{
+    width: 60%;
+    text-align: center;
+    float: right;
+}
+.scopeImg img{
+    width: 20vw;
+    margin-top: 60px;
+}
+
+
+.job-roles{
+    width: 100%;
+    min-height: 20vh;
+}
+.job-roles div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+.job-roles div p{
+    background-color: #e53535;
+    color: white;
+    font-size: 1.07em;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 5px;
+    padding: 11px 14px ;
+    margin-top: 15px;
+}
+.job-roles div p:hover{
+    background-color: #1f3e93;
+    transition: 0.8s;
+}
+.enquire{
+  width: 100%;
+  min-height: 50vh;
+  background-color: rgb(248, 238, 240);
+  margin-top: 2.5em;
+  padding: 3em;
+  display: flex;
+  justify-content: space-around;
+  gap: 10em;
+}
+.msg{
+  width: 45%;
+}
+.msg h2{
+    font-size: 2.4em;
+
+}
+.msg p{
+    font-size: 1.2em;
+    line-height: 1.7em;
+    margin-top: 2em;
+    text-align: justify;
+}
+.enquire-form{
+    width: 37%;
+    min-height:50vh;
+    background:linear-gradient(to top right, rgb(250, 137, 150),rgb(250, 187, 187),rgb(239, 228, 228));
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    text-align: center;
+    padding: 2em;
+}
+.enquire-form h3{
+    font-size: 2em;
+    color: #e53535;
+    margin-bottom: 1.1em;
+
+}
+.enquire-form input{
+    width: 87%;
+    margin-bottom: 1.8em;
+    padding: 1.5vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+}
+.enquire-form .text{
+    width: 45%;
+    padding: 1.5vh;
+    color: rgb(61, 60, 60);
+}
+.enquire-form select{
+    width: 40%;
+    padding: 1.5vh;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    text-align: center;
+    color: rgb(74, 73, 73);
+}
+.enquire-form select option{
+    text-align: left;
+    color: black;
+}
+.enquire-form textarea{
+    width: 87%;
+    height: 6vh;
+    margin-bottom: 1.8em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1.3em;
+    padding-left: 1.5em;
+    line-height: 6vh;
+}
+.enquire-form button{
+    width: 87%;
+    padding: 1.5vh;
+    background-color: #e53535;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+.enquire-form button:hover{
+    background-color: white;
+    color: #e53535;
+}
+
+@media(max-width:1000px){
+  .Container{
+    flex-direction: column;
+    padding: 1.5em;
+  }
+  .Container .img1{
+    width: 100%;
+  }
+  .Container .info{
+    width: 100%;
+  }
+  .Course-Objective{
+    padding-inline: 2.5em;
+    padding-top: 0;
+    margin-top: 0;
+}
+.Wrapper{
+    flex-wrap: wrap;
+}
+  .Wrapper .program-duration{
+       border-right: none;
+  }
+  .keytopic .topics{
+    gap: 1em;
+  }
+  .topics h2{
+    margin-top: 1.5em;
+  }
+  .scope{
+    flex-direction: column;
+  }
+  .scope .aboutsec{
+    width: 100%;
+  }
+  .scope .scopeImg{
+    width: 100%;
+  }
+  .scopeImg img{
+    width: 40vw;
+  }
+  .about-info{
+    margin-top: 1.7em;
+  }
+  .job-roles h2{
+    margin-top: 1.3em;
+  }
+  .enquire{
+    flex-direction: column;
+    gap: 4em;
+  }
+  .msg{
+    width: 100%;
+  }
+  .enquire-form{
+    width: 100%;
+  }
+}

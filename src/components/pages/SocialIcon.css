@@ -1,0 +1,83 @@
+.menu {
+  position: fixed;
+  right: 17px;
+  bottom: 30px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+/* Toggle Button */
+.menu .toggle {
+  position: relative;
+  height: 45px;
+  width: 45px;
+  right:15%;
+  bottom:10%;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.4s ease;
+  z-index: 5;
+}
+.menu.active .toggle {
+  transform: rotate(360deg);
+  background: #f1f1f1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3),
+    0 0 0 3px #333,
+    0 0 0 7px #fff;
+}
+
+/* Social Links Circle */
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+.menu li {
+  position: absolute;
+  right: 106%;
+  top:20%;
+  list-style: none;
+  transition: transform 0.30s ease;
+  transform: rotate(calc(360deg / 6* var(--i))) scale(0);
+  transform-origin: 95px;
+  transition-delay: calc(0.05s * var(--i));
+}
+.menu.active li {
+  transform: rotate(calc(360deg / 6 * var(--i))) scale(1);
+}
+
+/* Individual Links */
+.menu li a {
+  position: relative;
+  display: flex;
+  transform: rotate(calc(360deg / -6 * var(--i)));
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: var(--clr);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.menu li a:hover {
+  transform: rotate(calc(360deg / -6 * var(--i))) scale(1.2);
+  background: var(--clr);
+  color: #fff;
+  box-shadow: 0 0 12px var(--clr), 0 0 20px var(--clr);
+}

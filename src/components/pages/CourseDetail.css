@@ -1,0 +1,391 @@
+.course-detail-container {
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+.not-found {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+  font-size: 24px;
+}
+
+/* Header section */
+.course-header {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.image-container {
+  align-self: center;
+  width: 100%;
+  max-width: 560px;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.image-placeholder {
+  background: linear-gradient(135deg, #3458db 0%, #f40000 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+.header-content {
+  flex: 1;
+}
+
+.course-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.course-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #eb2929);
+  border-radius: 2px;
+}
+
+.course-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Content sections */
+.content-section {
+  margin-bottom: 30px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.content-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+}
+
+/* Topics list */
+.topics-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+}
+
+.topic-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.topic-item:hover {
+  background-color: #f8f9fa;
+}
+
+.tick-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background-color: #27ae60;
+  color: white;
+  border-radius: 50%;
+  margin-right: 12px;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+/* Info grid */
+.info-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 40px 0;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: linear-gradient(135deg, #f8fbff, #eef5ff);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.info-item {
+  flex: 1;
+  min-width: 160px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e3eaf3;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.info-item h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.info-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 500;
+}
+/* Who is this course for */
+.scope-section h2.course-for-heading,
+.scope-section h2.job-roles-heading {
+  font-size: 1.5rem;
+  margin-top: 40px; /* added spacing to push it down */
+  margin-bottom: 20px;
+  color: #2c3e50;
+  border-left: 4px solid #3498db;
+  padding-left: 10px;
+}
+
+/* Individual list/item styling remains same */
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.course-list-item {
+  background: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.course-list-item:hover {
+  background: #2c80b4;
+  transform: translateY(-2px);
+}
+
+/* Job Roles */
+.job-roles-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.job-role-item {
+  background: #f1f5f9;
+  color: #2c3e50;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease;
+}
+
+.job-role-item:hover {
+  background: #e2ebff;
+  border-color: #3498db;
+}
+
+/* Scope + Form Section (for Real-time Projects + Form) */
+.scope-form-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 40px 0;
+  padding: 40px;
+  background: linear-gradient(135deg, #f8fbff, #eef5ff);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* Left Column (Real-time Projects) */
+.scope-section {
+  padding: 10px 13px;
+}
+
+.scope-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  border-left: 4px solid #3498db;
+  padding-left: 10px;
+}
+
+.scope-section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  word-spacing: 4px;
+}
+
+/* Apply Section (Form) */
+.apply-section {
+  padding: 0 15px;
+}
+
+.apply-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  border-left: 4px solid #3498db;
+  padding-left: 10px;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52,152,219,0.3);
+  outline: none;
+}
+
+.submit-btn {
+  background: #3498db;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  align-self: flex-start;
+}
+
+.submit-btn:hover {
+  background: #2c80b4;
+  transform: translateY(-2px);
+}
+
+/* Who is this course for */
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.course-list-item {
+  background: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.course-list-item:hover {
+  background: #2c80b4;
+  transform: translateY(-2px);
+}
+
+/* Job Roles */
+.job-roles-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.job-role-item {
+  background: #f1f5f9;
+  color: #2c3e50;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease;
+}
+
+.job-role-item:hover {
+  background: #e2ebff;
+  border-color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .course-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-container { max-width: 100%; }
+  .image-container img,
+  .image-placeholder { width: 100%; }
+
+  .info-grid {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .scope-form-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 25px;
+  }
+}

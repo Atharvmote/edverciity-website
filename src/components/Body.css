@@ -58,13 +58,12 @@ body::before {
   }
 }
 
-
 /* EDverciity */
 .bg-text {
   position: absolute;
-  top: 41px;
-  left:39.2%;
-  font-size: 49px;
+  top: 80px;
+  left:42%;
+  font-size: 40px;
   font-weight: 600;
   color: #4a00e0;
   opacity: 0.04;
@@ -75,9 +74,9 @@ body::before {
 }
 .bg-text1 {
   position: absolute;
-  top:19.9%;
-  left:66.5%;
-  font-size: 50px;
+  top:25.9%;
+  left:64.8%;
+  font-size: 40px;
   font-weight: 600;
   color: #4a00e0;
   opacity: 0.04;
@@ -94,26 +93,24 @@ body::before {
   justify-content: space-between;
   padding: 70px;
   flex-wrap: wrap;
-  background: #f5f5fa;
+  background: #f3f3f7;
 }
-.image-container {
+.next .image-container {
   flex: 1;
-  perspective: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 800px;
   overflow: visible;
-  transition: transform 0.5s ease;
 }
-.image-container img {
-  width: 400px;
-  margin-left: 10%;
-  transition: transform 0.6s ease, box-shadow 0.6s ease;
-  transform-style: preserve-3d;
+
+.next .image-container img {
+  width: min(100%, 520px);
+  height: auto;
   border-radius: 12px;
+  /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
 }
-/* .image-container:hover img {
-  transform: rotateY(10deg) scale(1.1) translateX(40px);
-  box-shadow: 0 40px 80px rgba(0,0,0,0.2);
-  z-index: 10;
-} */
+
 .info {
   flex: 1;
   color: #333;
@@ -136,12 +133,16 @@ body::before {
   font-size: 1rem;
   border: none;
   border-radius: 12px;
- background: linear-gradient(to right, #e53535,  #1f3e93);
+  background: linear-gradient(to right, #e53535,  #1f3e93);
   color: white;
   cursor: pointer;
-  animation: pulse 1.6s infinite;
+  animation: pulse 1.6s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
   z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
 .pulse-button::before {
@@ -161,6 +162,7 @@ body::before {
   transition: left 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
   z-index: 0;
 }
+
 /* Trigger swipe on hover */
 .pulse-button:hover::before {
   left: 100%;
@@ -168,8 +170,53 @@ body::before {
 
 /* Transform + background shift on hover */
 .pulse-button:hover {
-   background: linear-gradient(to left, #E53935,  #1E3A8A);
-  transform: scale(1.09);
+  background: linear-gradient(to left, #E53935,  #1E3A8A);
+  transform: scale(1.04);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Keyboard focus */
+.pulse-button:focus-visible {
+  outline: 3px solid rgba(30, 58, 138, 0.5);
+  outline-offset: 2px;
+}
+
+/* Pressed state */
+.pulse-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Subtle breathing animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
+  }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .pulse-button {
+    animation: none;
+  }
 }
 @media (max-width: 768px) {
   .bg-text {
@@ -281,16 +328,14 @@ body::before {
   align-items: stretch;
   flex-wrap: wrap;
   gap: 32px;
-  max-width: 1300px;
   margin: 0 auto;
   padding: 0 18px;
-
 }
 
 .course-box {
   flex: 1 1 calc(25% - 32px);
-  max-width: 300px;
-  min-width: 260px;
+  width: 300px;
+  width: 260px;
 }
 
 .course-box1:hover {
@@ -365,7 +410,7 @@ body::before {
   width:210px;
   margin-top: 32px;
   display: flex;
-  margin-left: 625px;
+  margin-left: 43.7%;
   justify-content: center;
   gap: 16px;
 }
@@ -433,7 +478,7 @@ body::before {
   overflow: hidden;
   padding: 9PX 5px;
   color: white;
- background: linear-gradient(to right, #E53935,  #1E3A8A);
+   background: linear-gradient(to right, #E53935,  #1E3A8A);
   border: none;
   border-radius: 8px;
   font-size: 15px;
@@ -482,8 +527,8 @@ body::before {
 /* Courses */
 .bg-text2 {
   position: absolute;
-  top: 22.8%;
-  left: 39.9%;
+  top: 22.5%;
+  left: 40.8%;
   font-size:65px;
   font-weight: 600;
   color: #4a00e0;
@@ -622,8 +667,8 @@ body::before {
 /* Affilation */
 .bg-text6 {
   position: absolute;
- top:51.8%;
-  left: 506.5px;
+ top:50.9%;
+  left: 38%;
   font-size:80px;
   font-weight: 600;
   color: #4a00e0;
@@ -1699,8 +1744,8 @@ hr {
 
   .bg-text12{
   position: absolute;
-  top:6.3%;
-  left:41.2%;
+  top:4.3%;
+  left:42.2%;
   font-size:55px;
   font-weight:bold;
   color: #4a00e0;
