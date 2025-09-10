@@ -111,7 +111,7 @@ const Body = () => {
     {
       title: "Data Science",
       image: TopX,
-      description: "Unlock career opportunities by mastering Python, Machine Learning, AI, and Big Data in one comprehensive program.",
+      description: "Unlock career opportunities by mastering Python, ML, AI, and Big Data in one comprehensive program.",
       rating: "4.7",
       applied: "4379+ ",
       link: "/datascience"
@@ -368,9 +368,9 @@ const Body = () => {
         <div className="testimonial-content">
           <h2>Hear from Our Students</h2>
           <p className="testimonial-description">
-            Edverciity students talk about their enjoyable learning experiences that included 
-            practical training, best practises, job prospects, and exposure to reputable 
-            businesses and organisations.
+          EdverCiity students describe their learning as practical, enjoyable, and industry-focused. With hands-on training and exposure to
+           real-world challenges, they gain confidence and valuable skills. Beyond academics, guidance on careers, grooming, and connections
+            with reputed companies help them grow both professionally and personally for today’s competitive world.
           </p>
           <div className="see-more-container">
             <button className="see-more-btn">See More Testimonials</button>

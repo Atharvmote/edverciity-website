@@ -17,6 +17,7 @@ import SocialIcon from './components/pages/SocialIcon';
 import StudentsCorner from './components/pages/StudentCorners';
 import CourseDetail from "./components/pages/CourseDetail";
 import CoursesPage from "./components/pages/CoursesPage";
+import EnquiriesList from './components/EnquiriesList';
 
 
 

@@ -4,18 +4,18 @@ import "./Header.css";
 import logo from "../assets/Header/Edverciity.png";
 
 const courseData = {
-  "Full Stack": [
-    { id: "mern", title: "Full Stack MERN" },
-    { id: "mean", title: "Full Stack MEAN" },
-    { id: "java-full", title: "JAVA Full Stack" },
-    { id: "python-full", title: "Python Full Stack" },
-  ],
-  "Data Science": [
+    "Data Science": [
     { id: "master-ds", title: "Master Diploma in Data Science" },
     { id: "master-ai", title: "Master Certification in Artificial Intelligence" },
     { id: "diploma-de", title: "Diploma in Data Engineering" },
     { id: "data-analyst-python", title: "Data Analyst using Python" },
     { id: "data-analyst-powerbi", title: "Data Analyst using PowerBI" },
+  ],
+  "Full Stack": [
+    { id: "mern", title: "Full Stack MERN" },
+    { id: "mean", title: "Full Stack MEAN" },
+    { id: "java-full", title: "JAVA Full Stack" },
+    { id: "python-full", title: "Python Full Stack" },
   ],
   "Software Development": [
     { id: "java", title: "Java & Advance Java" },
@@ -27,22 +27,22 @@ const courseData = {
     { id: "web-dev", title: "Web Development" },
     { id: "php", title: "PHP Development" },
   ],
-  "Mechanical": [
-    { id: "plc", title: "AutoCAD" },
+  "Mechanical CAD": [
+    { id: "plc", title: "AutoCAD Mechanical" },
     { id: "scada", title: "SolidWorks" },
     { id: "instrumentation", title: "NX CATIA" },
     { id: "creo", title: "Creo ANSYS" },
     { id: "product-design", title: "Product Design" },
     { id: "gd-t", title: "GD & T" }
   ],
-  "Electrical": [
-    { id: "autocad", title: "AutoCAD" },
+  "Electrical CAD": [
+    { id: "autocad", title: "AutoCAD Electrical" },
     { id: "electrical-basics", title: "Electrical" },
     { id: "eplan", title: "EPlan" },
     { id: "system-monitoring", title: "System Monitoring" }
   ],
-  "Civil": [
-    { id: "autocad", title: "AutoCAD" },
+  "Civil CAD": [
+    { id: "autocad", title: "AutoCAD Civil" },
     { id: "revit", title: "Revit" },
     { id: "stord", title: "Staads" },
     { id: "etales", title: "ETables" },

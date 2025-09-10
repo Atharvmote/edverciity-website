@@ -55,8 +55,8 @@
 }
 
 .logo img {
-  height:45px;
-  margin-left: -90px;
+  height:52px;
+  margin-left: -20px;
 
 }
 
@@ -64,7 +64,7 @@
 .nav {
   margin-left: 90px;
   display: flex;
-  gap: 90px;
+  gap: 50px;
   align-items: center;
 }
 

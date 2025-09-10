@@ -9,31 +9,38 @@ let courses = [
     title: "MERN Stack Development",
     image: MERN,
     description: `Master the complete MERN Stack (MongoDB, Express.js, React.js, Node.js) - the most sought-after technology stack powering modern web applications. This intensive program takes you from foundational concepts to advanced implementation, teaching you to build scalable, production-ready applications. You'll gain expertise in creating dynamic user interfaces with React.js, developing robust server-side logic with Node.js and Express.js, and managing databases efficiently with MongoDB. Through hands-on projects simulating real industry scenarios, you'll graduate with the confidence and portfolio to excel in today's competitive tech landscape.`,
-    objective: `Our mission is to transform aspiring developers into industry-ready MERN Stack professionals capable of designing, developing, and deploying full-scale applications. Through our immersive project-based approach, you'll develop critical problem-solving abilities, master debugging techniques, and learn to create data-driven applications that meet enterprise standards.`,
+    objective: `Advance your professional trajectory in web development through our Full Stack MERN course program in Nagpur. Engaging in immersive training and practical experiences, you'll acquire the specialized competencies essential for thriving in full-stack development roles. Our curriculum bridges your current knowledge with the critical skills sought by leading tech companies. Upon completion, you'll possess both the theoretical understanding and hands-on proficiency to develop robust web applications, optimize user experiences, and contribute significant value to your chosen organization.
+    Our mission is to transform aspiring developers into industry-ready MERN Stack professionals capable of designing, developing, and deploying full-scale applications. Through our immersive project-based approach, you'll develop critical problem-solving abilities, master debugging techniques, and learn to create data-driven applications that meet enterprise standards.`,
     info: {
       duration: "160 Hours of Intensive Training",
       accreditation: "AICSM Certified Program",
       recognition: "Globally Recognized Curriculum",
       practice: "60+ Hands-on Coding Exercises",
       doubt: "Personalized Doubt Resolution Sessions",
-      placement: "100% Placement Assistance with Interview Preparation"
     },
     topics: [
-      "Advanced React.js Component Architecture",
-      "Node.js Server Development & Optimization",
-      "Express.js REST API Development & Security",
-      "MongoDB Database Design & Management",
-      "JWT Authentication & Authorization Systems",
-      "Git Version Control & Collaborative Development",
-      "Cloud Deployment Strategies (Heroku/Render/AWS)",
-      "Performance Optimization & Security Best Practices"
-    ],
+  "Introduction to Software Development Life Cycle (SDLC)",
+  "Secure Software Development Life Cycle (SSDLC) Practices",
+  "Advanced React.js Component Architecture & State Management",
+  "Node.js Server Development & Performance Optimization",
+  "Express.js REST API Development & Security",
+  "MongoDB Database Design, Indexing & Management",
+  "Agile & Scrum Methodologies in Real Projects",
+  "Git Version Control, Branching & Collaborative Development",
+  "CI/CD Pipelines & DevOps Fundamentals",
+  "Testing Strategies: Unit, Integration & End-to-End Testing",
+  "Performance Optimization & Security Best Practices",
+  "Monitoring, Logging & Debugging in Production"
+],
+
     realTimeProjects: {
       heading: "Industry-Standard Project Experience",
-      details: `You'll develop complete applications including E-commerce platforms with payment integration, social media applications with real-time features, content management systems, and booking platforms. Each project encompasses the entire development lifecycle - from requirement analysis and design to coding, testing, deployment, and maintenance.`
+      details: `
+      You'll develop complete applications including E-commerce platforms with payment integration, social media applications with real-time features, content management systems, and booking platforms. Each project encompasses the entire development lifecycle - from requirement analysis and design to coding, testing, deployment, and maintenance.`
     },
     formPath: "/apply/mern-stack",
-    scope: `This comprehensive MERN Stack program opens doors to lucrative careers in web development across startups, multinational corporations, and freelance markets. You'll emerge with the skills to work as a full stack developer, capable of handling both frontend and backend responsibilities with equal proficiency.`,
+    scope: `This Full Stack MERN Course in Nagpur delves into both foundational and advanced web development topics, including front-end and back-end technologies, database management, and deployment strategies. Participants will gain hands-on experience implementing widely-used web development techniques using MongoDB, Express.js, React.js, and Node.js
+    This comprehensive MERN Stack program opens doors to lucrative careers in web development across startups, multinational corporations, and freelance markets. You'll emerge with the skills to work as a full stack developer, capable of handling both frontend and backend responsibilities with equal proficiency.`,
     whoIsFor: [
       "Aspiring developers seeking to launch their tech careers",
       "Computer Science/IT students wanting practical industry skills",
@@ -61,39 +68,47 @@ let courses = [
       recognition: "Industry-Standard Curriculum",
       practice: "50+ Hands-on Coding Exercises",
       doubt: "Regular Doubt Clearing Sessions",
-      placement: "Dedicated Placement Support"
+      // placement: "Dedicated Placement Support"
     },
-    topics: [
-      "Angular Framework & Component Architecture",
-      "TypeScript for Enterprise Applications",
-      "Node.js Server Development",
-      "Express.js Middleware & API Development",
-      "MongoDB Database Management",
-      "Authentication & Authorization Systems",
-      "Application Security Best Practices",
-      "Deployment & DevOps Fundamentals"
-    ],
-    realTimeProjects: {
-      heading: "Real-World Application Development",
-      details: `Develop industry-standard applications including inventory management systems, customer relationship management (CRM) platforms, content management systems, and real-time collaboration tools that demonstrate your readiness for professional development roles.`
-    },
-    formPath: "/apply/mean-stack",
-    scope: `This program prepares you for rewarding careers in full stack development across IT service companies, product-based firms, and startups. You'll be equipped to handle both frontend and backend development challenges with confidence.`,
-    whoIsFor: [
-      "JavaScript developers looking to specialize in MEAN stack",
-      "Frontend developers expanding to full stack capabilities",
-      "IT professionals seeking career advancement",
-      "Computer science students preparing for industry roles",
-      "Tech enthusiasts wanting to build scalable web applications"
-    ],
-    jobRoles: [
-      "MEAN Stack Developer",
-      "Full Stack JavaScript Developer",
-      "Angular Frontend Developer",
-      "Node.js Backend Developer",
-      "Web Application Engineer"
-    ]
+  topics: [
+    "Introduction to Software Development Life Cycle (SDLC)",
+    "Secure Software Development Life Cycle (SSDLC) Practices",
+    "Angular Framework & Component Architecture",
+    "TypeScript for Enterprise Applications",
+    "Node.js Server Development & Optimization",
+    "Express.js Middleware & API Development",
+    "MongoDB Database Design & Management",
+    "Authentication & Authorization Systems",
+    "Application Security Best Practices",
+    "Agile & Scrum Methodologies in Real Projects",
+    "Git Version Control & Collaborative Development",
+    "CI/CD Pipelines & DevOps Fundamentals",
+    "Testing Strategies: Unit, Integration & End-to-End Testing",
+    "Monitoring, Logging & Debugging in Production"
+  ],
+  realTimeProjects: {
+    heading: "Real-World Application Development",
+    details: `Work on industry-grade projects such as inventory management systems, customer relationship management (CRM) platforms, content management systems (CMS), and real-time collaboration tools. These hands-on applications will help you demonstrate practical expertise and readiness for professional development roles.`
   },
+  formPath: "/apply/mean-stack",
+  scope: `This program equips you with the skills to thrive as a full stack developer in IT service companies, product-based firms, and fast-growing startups. You'll confidently handle both frontend and backend challenges, build scalable applications, and follow modern SDLC & SSDLC practices for secure development.`,
+  whoIsFor: [
+    "JavaScript developers aiming to master MEAN stack",
+    "Frontend developers expanding into full stack roles",
+    "IT professionals seeking career advancement in web development",
+    "Computer science students preparing for industry projects",
+    "Tech enthusiasts passionate about building scalable web applications"
+  ],
+  jobRoles: [
+    "MEAN Stack Developer",
+    "Full Stack JavaScript Developer",
+    "Angular Frontend Developer",
+    "Node.js Backend Developer",
+    "Web Application Engineer",
+    "Software Development Engineer (SDE)"
+  ]
+}
+,
 
   {
     id: "java-full",
@@ -1533,7 +1548,7 @@ let courses = [
       recognition: "Industry-Oriented Specialization",
       practice: "10+ Estimation Projects",
       doubt: "Mentor Support for Costing",
-      placement: "Placement Guidance for QS Roles"
+      // placement: "Placement Guidance for QS Roles"
 
     },
     topics: [

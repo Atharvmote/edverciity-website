@@ -16,7 +16,7 @@ function CADPage() {
       { id: "autocad-civil", title: "AutoCAD Civil", description: "Civil Engineering Design" },
       { id: "revit", title: "Revit Architecture", description: "Building Information Modeling" },
       { id: "staad-pro", title: "STAAD Pro", description: "Structural Analysis & Design" },
-      { id: "etables", title: "ETables", description: "Structural Design Software" },
+      { id: "etables", title: "ETabs", description: "Structural Design Software" },
       { id: "civil3d", title: "Civil 3D", description: "Civil Infrastructure Design" },
       { id: "quantity-surveying", title: "Quantity Surveying", description: "Cost Estimation & Planning" }
     ],
@@ -170,3 +170,4 @@ function CADPage() {
 }
 
 export default CADPage;
+
