@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/edverciity-website/static/css/main.943f32b5.css",
-    "main.js": "/edverciity-website/static/js/main.05808a25.js",
+    "main.css": "/edverciity-website/static/css/main.5c3a710f.css",
+    "main.js": "/edverciity-website/static/js/main.f73ba3ae.js",
     "static/media/p6.jpg": "/edverciity-website/static/media/p6.58dbee0721f2c5ebe76f.jpg",
     "static/media/p5.jpg": "/edverciity-website/static/media/p5.b0dda8688b747f71dde3.jpg",
     "static/media/p2.jpg": "/edverciity-website/static/media/p2.d4c693591276d959ef89.jpg",
     "static/media/p1.jpg": "/edverciity-website/static/media/p1.dac1c13e09b108fdc6a9.jpg",
     "static/media/Placement.png": "/edverciity-website/static/media/Placement.130d5c086400087b45a2.png",
+    "static/media/1.jpg": "/edverciity-website/static/media/1.a3462c708c53d749d893.jpg",
     "static/media/section1b1.png": "/edverciity-website/static/media/section1b1.f619eac2de4834c0de67.png",
     "static/media/about-logo.png": "/edverciity-website/static/media/about-logo.2b52a20d21af7a511f4f.png",
     "static/media/contact.png": "/edverciity-website/static/media/contact.c42ed59692f1ab40985b.png",
@@ -15,8 +16,8 @@
     "static/media/p3.png": "/edverciity-website/static/media/p3.ad81c6e7a88362296412.png",
     "static/media/Ak.jpg": "/edverciity-website/static/media/Ak.bb3256c02d7eb7037a03.jpg",
     "static/media/internship2.jpg": "/edverciity-website/static/media/internship2.c46cb731a77be32be45a.jpg",
-    "static/media/automative-embedded.jpg": "/edverciity-website/static/media/automative-embedded.b48a539c808b3e17f7d2.jpg",
     "static/media/Swapnil-Udapurkar.jpeg": "/edverciity-website/static/media/Swapnil-Udapurkar.bc6d887d0799b1bb3ca6.jpeg",
+    "static/media/AIImg.png": "/edverciity-website/static/media/AIImg.b79e6e22e48c22c646f9.png",
     "static/media/Edverciity.png": "/edverciity-website/static/media/Edverciity.e948132c367bae620a14.png",
     "static/media/Google-review.png": "/edverciity-website/static/media/Google-review.15777e5dc993fe57e51a.png",
     "static/media/TopY.jpg": "/edverciity-website/static/media/TopY.9ddd49d838e1d5cdb9bb.jpg",
@@ -29,6 +30,7 @@
     "static/media/tcslogo.jpg": "/edverciity-website/static/media/tcslogo.6638ee3cbbeafcf8653a.jpg",
     "static/media/Infosys.jpg": "/edverciity-website/static/media/Infosys.7521d842f08209410e78.jpg",
     "static/media/Meta.jpg": "/edverciity-website/static/media/Meta.6e9e24ed7dce11b5698d.jpg",
+    "static/media/goooooogleeee.jpg": "/edverciity-website/static/media/goooooogleeee.e4b47a8348cae074f6cb.jpg",
     "static/media/accenture.jpg": "/edverciity-website/static/media/accenture.b08de8d427d3807d8577.jpg",
     "static/media/aicsm-round-logo-new-250x250.webp": "/edverciity-website/static/media/aicsm-round-logo-new-250x250.3d22d22c8d4f3243f421.webp",
     "static/media/v1.jpeg": "/edverciity-website/static/media/v1.028cfd71c44f750a04b3.jpeg",
@@ -40,11 +42,11 @@
     "static/media/cognizant.webp": "/edverciity-website/static/media/cognizant.898efb3c04e5ac10d308.webp",
     "static/media/tech-mahindra.webp": "/edverciity-website/static/media/tech-mahindra.596d7dcf51ba55fcfb91.webp",
     "index.html": "/edverciity-website/index.html",
-    "main.943f32b5.css.map": "/edverciity-website/static/css/main.943f32b5.css.map",
-    "main.05808a25.js.map": "/edverciity-website/static/js/main.05808a25.js.map"
+    "main.5c3a710f.css.map": "/edverciity-website/static/css/main.5c3a710f.css.map",
+    "main.f73ba3ae.js.map": "/edverciity-website/static/js/main.f73ba3ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.943f32b5.css",
-    "static/js/main.05808a25.js"
+    "static/css/main.5c3a710f.css",
+    "static/js/main.f73ba3ae.js"
   ]
 }
