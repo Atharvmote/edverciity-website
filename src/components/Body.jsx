@@ -370,7 +370,7 @@ const Body = () => {
           <p className="testimonial-description">
           EdverCiity students describe their learning as practical, enjoyable, and industry-focused. With hands-on training and exposure to
            real-world challenges, they gain confidence and valuable skills. Beyond academics, guidance on careers, grooming, and connections
-            with reputed companies help them grow both professionally and personally for today’s competitive world.
+            with reputed companies help them grow both professionally and personally for today’s competitive gworld.
           </p>
           <div className="see-more-container">
             <button className="see-more-btn">See More Testimonials</button>

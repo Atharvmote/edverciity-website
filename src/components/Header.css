@@ -7,11 +7,11 @@
   z-index: 999;
   background: #fff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  
 }
 
 /* 🔹 Top Bar */
 .top-strip {
+  /* position: sticky; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +21,7 @@
   color: #444;
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.054);
- box-shadow: 0 2.4px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2.4px 4px rgba(0, 0, 0, 0.05);
   z-index: 1000;
 }
 
@@ -51,13 +51,11 @@
   align-items: center;
   padding: 14px 80px;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0);
-  
 }
 
 .logo img {
   height:52px;
   margin-left: -20px;
-
 }
 
 /* 🔹 Navigation */
@@ -77,7 +75,7 @@
 }
 
 .nav-link:hover {
-    color:  #1E3A8A;
+  color:  #1E3A8A;
 }
 
 .nav-link::after {
@@ -87,7 +85,7 @@
   left: 0;
   height: 2px;
   width: 0%;
-   background: linear-gradient(to right, #E53935,  #1E3A8A);
+  background: linear-gradient(to right, #e5383579,  #1e3b8a63);
   transition: width 0.3s ease;
 }
 
@@ -105,8 +103,9 @@
 }
 
 .rotate {
-  transform: rotate(90deg); /* or 180deg if you want full flip */
+  transform: rotate(90deg);
 }
+
 /* 🔽 Dropdown Container */
 .nav-item {
   position: relative;
@@ -135,7 +134,6 @@
   z-index: 1000;
 }
 
-
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -162,13 +160,11 @@
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Hover styles */
 .dropdown-item:hover {
   background: #eef5ff;
   color:  #1E3A8A;
 }
 
-/* Gradient underline on hover */
 .dropdown-item::after {
   content: '';
   position: absolute;
@@ -182,8 +178,10 @@
 }
 
 .dropdown-item:hover::after {
-  width: calc(100% - 28px); /* aligns with horizontal padding */
-}/* 📚 Courses Dropdown */
+  width: calc(100% - 28px);
+}
+
+/* 📚 Courses Dropdown */
 .dropdown-panel {
   position: absolute;
   top: 100%;
@@ -198,7 +196,6 @@
   gap: 16px;
   z-index: 2000;
 }
-
 
 /* IT/CAD Toggle */
 .course-type-toggle {
@@ -215,10 +212,10 @@
   border: none;
   background: transparent;
   border-radius: 6px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: #666;
+  color: #000000;
 }
 
 .toggle-btn.active {
@@ -237,10 +234,9 @@
   gap: 24px;
 }
 
-/* Quick Access Links */
 .quick-access-links {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
   padding: 8px 0;
   border-bottom: 1px solid #eee;
@@ -304,7 +300,7 @@
 .dropdown-right .course-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 19px;
 }
 
 .course-card {
@@ -314,94 +310,61 @@
   text-align: center;
   text-decoration: none;
   color: #333;
-  /* font-weight: 500; */
   transition: transform 0.3s ease;
 }
 
 .course-card:hover {
   transform: scale(1.2);
   background: #ffffff;
-    /* background: linear-gradient(90deg, #1900ff24, #ee097814); */
 }
 
 /* 🎓 Certifications Dropdown */
-.cert-lines {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  /* background: #fff; */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 300px;
-  border-radius: 8px;
-  z-index: 2000;
-}
-
-.cert-line {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-decoration: none;
- color: #080808;
-  padding: 8px 12px;
-  font-weight: 500;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-  gap: 8px;
-}
-
-.cert-line:hover {
-  background: #eef5ff;
-  color: #1500ff;
-}
-.trending-badge {
-  background: linear-gradient(90deg, #1900ff, #ee0979);
-  color: white;
-  font-size: 0.7rem;
-  font-weight: 600;
-  padding: 2px 6px;
-  border-radius: 6px;
-  white-space: nowrap;
-}
-.cert-lines {
+.certlines {
   position: absolute;
   top: 100%;
   left: 0;
   background: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 12px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   width: 300px;
   border-radius: 8px;
-  z-index: 2000;
-  color: #000 !important;  
+  z-index: 1000;
 }
+
+/* .cert-line,
+.cert-line:visited,
+.cert-line:active {
+  color: #000 !important;
+}
+
+.cert-line:hover {
+  color: #0073e6 !important; 
+  background: #f0f0f0;
+}
+.cert-line::after {
+  background: none !important;
+} */
 
 .cert-line {
   position: relative;
   display: flex;
   align-items: center;
+    color: #333;
   justify-content: space-between;
-  text-decoration: none;
-  color: #000 !important; 
   padding: 8px 12px;
   font-weight: 500;
   border-radius: 6px;
   gap: 8px;
+  text-decoration: none;
+  transition: color 0.3s, background 0.3s;
 }
-
-/* Hover styles */
 .cert-line:hover {
-  background: #eef5ff;
-  color: #1500ff;
+  color: #0073e6;
+  background: #f0f0f0;
 }
-
-/* Gradient underline on hover */
 .cert-line::after {
   content: '';
   position: absolute;
@@ -413,9 +376,17 @@
   border-radius: 2px;
   transition: width 0.3s ease;
 }
-
 .cert-line:hover::after {
-  width: calc(100% - 24px); /* aligns with horizontal padding */
+  /* width: calc(100% - 24px); */
+}
+.trending-badge {
+  background: linear-gradient(90deg, #1900ff, #ee0979);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 6px;
+  white-space: nowrap;
 }
 
 /* 📍 Locate Us Dropdown */
@@ -441,32 +412,10 @@
   border-radius: 4px;
   transition: background 0.3s ease, color 0.3s ease;
 }
-
-.simple-item:hover {
-  background: #f2f2f2;
-}
-.simple-dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  border-radius: 6px;
-  z-index: 2000;
-}
-
-
-/* Hover styles */
 .simple-item:hover {
   background: #f2f2f2;
   color: #1500ff;
 }
-
-/* Gradient underline on hover */
 .simple-item::after {
   content: '';
   position: absolute;
@@ -478,9 +427,8 @@
   border-radius: 2px;
   transition: width 0.3s ease;
 }
-
 .simple-item:hover::after {
-  width: calc(100% - 20px); /* aligns with horizontal padding */
+  width: calc(100% - 20px);
 }
 
 /* ✨ Enquiry CTA */
@@ -493,9 +441,8 @@
   font-weight: 500;
   transition: background 0.1s ease;
 }
-
 .enquiry-btn:hover {
- background: linear-gradient(240deg, #1900ff, #ee0979);
+  background: linear-gradient(240deg, #1900ff, #ee0979);
 }
 
 /* ✅ Hide top-left in mobile */
@@ -508,8 +455,6 @@
     padding: 10px 24px;
     justify-content: center;
     font-size: 0.85rem;
-
-
   }
 
   .top-right {
@@ -517,24 +462,23 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  
 
   .nav {
     display: none;
   }
-.logo {
-  position: relative;
-  right: 20%; 
-}
-.hamburger {
-  display: block;
-  cursor: pointer;
-  font-size: 1.4rem;
-  padding: 8px;
-  position: absolute;
-  top: 10px;
-  right: 5%;
-}
+  .logo {
+    position: relative;
+    right: 20%; 
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 8px;
+    position: absolute;
+    top: 10px;
+    right: 5%;
+  }
 
   .mobile-nav {
     position: fixed;
@@ -551,44 +495,36 @@
     z-index: 2000;
     overflow-y: auto;
   }
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 1.5rem;
-  cursor: pointer;
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
     z-index: 3000;
-
-}
-
+  }
   .mobile-nav .logo img {
     height: 36px;
-
   }
-
   .mobile-nav .nav-link {
     font-size: 16px;
     padding: 8px 0;
     border-bottom: 1px solid #eee;
   }
-
   .mobile-nav .dropdown-panel,
   .mobile-nav .simple-dropdown {
     padding-left: 12px;
   }
-
   .mobile-nav .dropdown-category {
     cursor: pointer;
     padding: 6px 0;
   }
-
   .mobile-nav .course-card,
   .mobile-nav .simple-item {
     display: block;
     padding: 6px 0;
     font-size: 14px;
   }
-
   .enquiry-btn {
     margin-top: 12px;
     text-align: center;
@@ -600,7 +536,6 @@
   .hamburger {
     display: none;
   }
-
   .mobile-nav {
     display: none;
   }
@@ -616,134 +551,5 @@
   .mobile-nav .course-card::after {
     width: 0 !important;
     display: none;
-  }
-}
-
-@media (max-width: 1024px) {
-  /* Hide top-left links */
-  .top-left {
-    display: none;
-  }
-
-  /* Top strip */
-  .top-strip {
-    padding: 10px 24px;
-    justify-content: space-between; /* space-between for email + contact */
-    font-size: 0.85rem;
-  }
-
-  .top-right {
-    gap: 60px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-
-  /* Hide desktop nav */
-  .nav {
-    display: none;
-  }
-
-  /* Logo & Hamburger */
-  .header-bar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .logo {
-    position: relative;
-    left: 10%;
-    z-index: 2000;
-  }
-
-.mobile-nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 24px; /* gap between header and links */
-}
-
-.mobile-logo {
-  height: 36px;
-}
-.hamburger {
-  display: block;
-  cursor: pointer;
-  font-size: 1.6rem;
-  padding: 8px;
-  position: absolute; /* top-right corner */
-  top: 8px;           /* thoda upar */
-  right: 16px;        /* right edge se thoda gap */
-  z-index: 2000;
-}
-
-  /* Mobile Nav Panel */
-  .mobile-nav {
-    position: fixed;
-    top: 1%;
-    right: 0;
-    width: 400px;
-    height: 100vh;
-    background: #fff;
-    box-shadow: -2px 0 12px rgba(0,0,0,0.2);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    z-index: 2500;
-    overflow-y: auto;
-    transform: translateX(0);
-    transition: transform 0.3s ease;
-  }
-
-  /* Close button */
-  .close-btn {
-    position: absolute;
-    top: 19px;
-    right: 20px;
-    font-size: 1.3rem;
-    cursor: pointer;
-    color: #333333ec;
-    z-index: 3000;
-  }
-
-
-  /* Mobile nav logo inside panel */
-  .mobile-nav .logo img {
-    height: 36px;
-    margin-bottom: 20px;
-  }
-
-  /* Mobile nav links */
-  .mobile-nav .nav-link, 
-  .mobile-nav .enquiry-btn {
-    font-size: 16px;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-    display: block;
-  }
-
-  .mobile-nav .nav-link:hover {
-    color: #1E3A8A;
-  }
-
-  .mobile-nav .dropdown-panel,
-  .mobile-nav .simple-dropdown {
-    padding-left: 12px;
-  }
-
-  .mobile-nav .dropdown-category,
-  .mobile-nav .course-card,
-  .mobile-nav .simple-item {
-    cursor: pointer;
-    padding: 6px 0;
-    font-size: 14px;
-    display: block;
-  }
-
-  .enquiry-btn {
-    margin-top: 12px;
-    text-align: center;
   }
 }

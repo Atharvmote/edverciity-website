@@ -14,7 +14,7 @@ import Testimonials from './components/pages/Testimonials';
 import StudentProject from './components/pages/StudentsProject';
 import GoogleReviewsSidebar from './components/pages/GoogleReviewsSidebar';
 import SocialIcon from './components/pages/SocialIcon';
-import StudentsCorner from './components/pages/StudentCorners';
+import StudentsCorner from './components/pages/StudentCorner';
 import CourseDetail from "./components/pages/CourseDetail";
 import CoursesPage from "./components/pages/CoursesPage";
 import EnquiriesList from './components/EnquiriesList';
@@ -36,7 +36,7 @@ function App() {
         {/* IT and CAD Pages */}
         <Route path="/it" element={<ITPage />} />
         <Route path="/cad" element={<CADPage />} />
-        <Route path="/students" element={<StudentsCorner />} />
+        <Route path="/studentscorner" element={<StudentsCorner />} />
 
         <Route path="/courses" element={<CoursesPage />} />
 

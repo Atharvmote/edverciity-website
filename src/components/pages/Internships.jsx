@@ -1,5 +1,5 @@
 import React from "react";
-import "./Internship.css"
+// import "./Internship.css"
 import section1 from "../../assets/Intershipimg/section1/internship2.jpg"
 import section1a from "../../assets/Intershipimg/section1/projecticon1.svg"
 import section1b from "../../assets/Intershipimg/section1/projecticon2.svg"
